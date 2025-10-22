@@ -1,0 +1,23 @@
+services:
+  webapp:
+    build: streamlit
+    ports:
+      - "80:8501"
+    networks:
+      - app-network
+    env_file:
+      - ./.env
+    volumes:
+      - /Users/pnhek/.ssh/msds692-group-project-69ab3cae2933.json:/tmp/gcp-key.json:ro
+  api-server:
+    build: api_server
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    env_file:
+      - ./.env
+    volumes:
+      - /Users/pnhek/.ssh/msds692-group-project-69ab3cae2933.json:/tmp/gcp-key.json:ro
+networks:
+  app-network: 

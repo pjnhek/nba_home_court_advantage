@@ -1,0 +1,4 @@
+0 0 * * * curl -s "http://api-server:8000/retrieve_nba_attendance_data_as_json_file?crontab=true" >> /var/log/cron.log 2>&1
+0 0 * * * curl -s "http://api-server:8000/retrieve_seatgeek_api_data_as_json_file?crontab=true" >> /var/log/cron.log 2>&1 
+0 0 * * * curl -s "http://api-server:8000/retrieve_nba_game_ids_as_json_file?crontab=true" >> /var/log/cron.log 2>&1
+0 0 * * * curl -s "http://api-server:8000/retrieve_all_nba_game_data_as_json_file?crontab=true" >> /var/log/cron.log 2>&1

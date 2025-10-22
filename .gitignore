@@ -1,0 +1,20 @@
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Package lists (generated files)
+*_packages.txt
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

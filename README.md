@@ -6,6 +6,8 @@ This project investigates whether "Home Court Advantage" exists in modern NBA ba
 
 The system scrapes NBA game data from Basketball Reference and the NBA Stats API, stores it in Google Cloud Storage (GCS), and provides interactive visualizations through a Streamlit dashboard.
 
+https://streamlit-55318076574.us-west2.run.app/
+
 ---
 
 ## Architecture
